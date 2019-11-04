@@ -13,8 +13,9 @@
   </head>
   <body>
     <div class="status-bar">
-      <div class="status__column"></div>
-      <span class="status-bar__clock">13:54</span>
+      <div class="status__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
       <div class="status__column">
         <i class="far fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
@@ -43,15 +44,29 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="img/winddog.jpg" alt="" />
-              <span class="chat__username">
-                Lynn
-              </span>
-              <span class="chat__preview">Going home</span>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="img/pika.jpg"
+                  alt=""
+                  class="m-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    yulmin kim
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__now-listening">
+                  <span class="chat__timestamp">
+                    March 8
+                  </span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -66,6 +81,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i
           ></a>
         </li>
@@ -81,5 +97,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!</span>
+    </div>
   </body>
 </html>
